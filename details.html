@@ -1,0 +1,26 @@
+<div id="details" class="max-x-lg mx-auto md:px-16">
+  <h3 class="text-gray-700">{{ .Site }}</h3>
+  <h1 class="font-bold">{{ .Name }}</h1>
+  <h2 class="mb-4 text-green-600">{{ .Price }}</h2>
+
+  <ul class="mb-4">
+    <li class="m-1 flex items-start">
+      <span class="mr-1">Current Price:</span>
+      <span class="mr-1">{{ .Price }}</span>
+      <span>(Aug 12th)</span>
+    </li>
+    <li class="m-1 flex items-start">
+      <span class="mr-1">Highest Price:</span>
+      <span class="mr-1">TBD</span>
+      <span>(Aug 12th)</span>
+    </li>
+    <li class="m-1 flex items-start">
+      <span class="mr-1">Lowest Price:</span>
+      <span class="mr-1">TBD</span>
+      <span>(Aug 12th)</span>
+    </li>
+  </ul>
+
+  <button type="submit" class="rounded-lg bg-gray-200 px-2 py-2 text-sm font-medium">Notify on price drop</button>
+</div>
+

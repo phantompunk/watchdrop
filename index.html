@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+  <script src="https://unpkg.com/htmx.org@2.0.1"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+ </head> 
+ <body>
+    <div class="py-6 lg:py-16 mx-auto max-w-lg text-center">
+      <h1 class="text-3xl lg:text-6xl font-bold">WatchDrop</h1>
+      <form hx-post="/search" hx-target="#details" hx-swap="afterbegin" class="mx-auto py-4">
+        <label for="search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+        <input type="search" id="search" name="product" class="text-gray-900 rounded-lg px-2 py-4 ps-4 text-sm border"  placeholder="Search for product" required />
+        <button type="submit" class="font-medium px-4 py-4 rounded-lg text-sm bg-blue-700 text-white">Search</button>
+      </form>
+    </div>
+
+    <div id="details" class="mx-auto max-w-xl"></div>
+ </body>
+</html>
